@@ -18,6 +18,7 @@ bin/
 *.rule
 *.tmp
 */debug
+*/release
 *.suo
 *.log
 *.tlog
