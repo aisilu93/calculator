@@ -23,26 +23,25 @@
             <ColumnDefinition Width="5*" />
             <ColumnDefinition Width="236*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="0" Grid.ColumnSpan="4" Background="WhiteSmoke"/>
-        <Button Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" FontSize="30">0</Button>
-        <Button Grid.Column="2" Grid.Row="5" FontSize="30">.</Button>
-        <Button Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" FontSize="30">=</Button>
-        <Button Grid.Column="0" Grid.Row="4" FontSize="30">1</Button>
-        <Button Grid.Column="1" Grid.Row="4" FontSize="30">2</Button>
-        <Button Grid.Column="2" Grid.Row="4" FontSize="30">3</Button>
-        <Button Grid.Column="0" Grid.Row="3" FontSize="30">4</Button>
-        <Button Grid.Column="1" Grid.Row="3" FontSize="30">5</Button>
-        <Button Grid.Column="2" Grid.Row="3" FontSize="30">6</Button>
-        <Button Grid.Column="0" Grid.Row="2" FontSize="30">7</Button>
-        <Button Grid.Column="1" Grid.Row="2" FontSize="30">8</Button>
-        <Button Grid.Column="2" Grid.Row="2" FontSize="30">9</Button>
-        <Button Grid.Column="2" Grid.Row="2" FontSize="30">9</Button>
-        <Button Grid.Column="3" Grid.Row="3" FontSize="30">+</Button>
-        <Button Grid.Column="3" Grid.Row="2" FontSize="30">-</Button>
-        <Button Grid.Column="3" Grid.Row="1" FontSize="30">*</Button>
-        <Button Grid.Column="2" Grid.Row="1" FontSize="30">/</Button>
-        <Button Grid.Column="1" Grid.Row="1" FontSize="30">C</Button>
-        <Button Grid.Column="0" Grid.Row="1" FontSize="30">CE</Button>
-        <TextBlock Grid.Column="5" Grid.Row="0" Grid.RowSpan="6" Background="WhiteSmoke"></TextBlock>
+        <TextBlock x:Name="textBlock_main" Grid.Column="0" Grid.ColumnSpan="4" Background="WhiteSmoke" FontSize="30" TextAlignment="Right" VerticalAlignment="Center"/>
+        <Button Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" FontSize="30" Click="Num_Click">0</Button>
+        <Button Grid.Column="2" Grid.Row="5" FontSize="30" Click="Num_Click">,</Button>
+        <Button Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" FontSize="30" Click="Button_Click_Equal">=</Button>
+        <Button Grid.Column="0" Grid.Row="4" FontSize="30" Click="Num_Click">1</Button>
+        <Button Grid.Column="1" Grid.Row="4" FontSize="30" Click="Num_Click">2</Button>
+        <Button Grid.Column="2" Grid.Row="4" FontSize="30" Click="Num_Click">3</Button>
+        <Button Grid.Column="0" Grid.Row="3" FontSize="30" Click="Num_Click">4</Button>
+        <Button Grid.Column="1" Grid.Row="3" FontSize="30" Click="Num_Click">5</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="30" Click="Num_Click">6</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="30" Click="Num_Click">7</Button>
+        <Button Grid.Column="1" Grid.Row="2" FontSize="30" Click="Num_Click">8</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="30" Click="Num_Click">9</Button>
+        <Button Grid.Column="3" Grid.Row="3" FontSize="30" Click="Click_Operation">+</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="30" Click="Click_Operation">-</Button>
+        <Button Grid.Column="3" Grid.Row="1" FontSize="30" Click="Click_Operation">*</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="30" Click="Click_Operation">/</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="30" Click="Button_Click_C">C</Button>
+        <Button Grid.Column="0" Grid.Row="1" FontSize="30" Click="Button_Click_CE">CE</Button>
+        <TextBox x:Name="textBlock_history" Grid.Column="5" Grid.Row="0" Grid.RowSpan="6" Background="WhiteSmoke" VerticalScrollBarVisibility="Auto"></TextBox>
     </Grid>
 </Window>
